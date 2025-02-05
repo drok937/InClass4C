@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to Conditionals and Boolean Logic</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    code {
+      background: #f4f4f4;
+      padding: 10px;
+      border-radius: 4px;
+      overflow-x: auto;
+      display: block;
+      white-space: pre;
+    }
+  </style>
+</head>
+<body>
+<h1>Introduction to Conditionals and Boolean Logic</h1>
+<p>Conditionals allow programs to make decisions based on specific conditions. These decisions are made using <strong>boolean logic</strong>, which evaluates expressions to <code>true</code> or <code>false</code>.</p>
+
+<h2>Boolean Values</h2>
+<p>In JavaScript, a boolean value is either <code>true</code> or <code>false</code>:</p>
+<code>let isRaining = true;<br>let isSunny = false;</code>
+
+<h2>If Statements</h2>
+<p>An <code>if</code> statement executes a block of code if the condition inside the parentheses evaluates to <code>true</code>:</p>
+<code>
+  let temperature = 30;
+  if (temperature > 25) {
+    console.log("It's a warm day!");
+  }
+</code>
+
+<h2>If-Else Statements</h2>
+<p>The <code>else</code> block executes if the condition is <code>false</code>:</p>
+<code>
+  let isHungry = false;
+  if (isHungry) {
+    console.log("Time to eat!");
+  } else {
+    console.log("Not hungry right now.");
+  }
+</code>
+
+<h2>Else-If Statements</h2>
+<p>Use <code>else if</code> to check multiple conditions:</p>
+<code>
+  let score = 85;
+  if (score >= 90) {
+    console.log("Grade: A");
+  } else if (score >= 80) {
+    console.log("Grade: B");
+  } else {
+    console.log("Keep trying!");
+  }
+</code>
+
+<h2>Logical Operators</h2>
+<p>Logical operators help combine multiple conditions:</p>
+<p><code>&&</code> (AND) - Both conditions must be true.</p>
+<p><code>
+    if (isRaining && temperature < 20) {
+      console.log("Wear a jacket.");
+    }</code><p>
+<p><code>||</code> (OR) - At least one condition must be true.</p>
+<p><code>
+    if (isRaining || isSunny) {
+      console.log("Weather is changing.");
+    }</code></p>
+<p><code>!</code> (NOT) - Reverses a boolean value.</p>
+<p> <code>
+    if (!isHungry) {
+    console.log("You are not hungry.");
+  }</code></p>
+
+
+<h2>Conclusion</h2>
+<p>Conditionals and boolean logic are essential for controlling program flow. Understanding these concepts allows developers to create dynamic and interactive applications.</p>
+</body>
+</html>
